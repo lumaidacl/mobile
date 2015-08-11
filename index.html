@@ -9,20 +9,37 @@
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<header class="page__header">
-			<div class="logo">
-				<figure>
-					<img src="img/click-izquierdo-11.svg" alt="click-izquierdo" />
+		<header class="page-header">
+			<div class="page-header__menu">
+				<a href="#" class="page-header__link">
+					<span class="icon-menu"></span>
+				</a>
+			</div>
+			<div class="page-header__calendar">
+				<a href="#" class="page-header__link">
+					<span class="icon-calendar"></span>
+				</a>
+			</div>
+
+			<div class="page-header__logo">
+				<figure class="page-header__img">
+					<img src="img/click-izquierdo-11.svg" alt="tecnologia" />
 				</figure>
 			</div>
-			<a href="#" class="logo-title"><span class="icon-menu"></span></a>
-			<a href="#" class="logo-title"><span class="icon-calendar"></span></a>
 		</header>
 
 		<section class="main-content">
 			<figure class="main-content__img">
-				<img src="img/video-juego.png" alt="video click izquierdo" />
+				<a href="#">
+					<img src="img/video-juego.png" class="main-content__video" alt="video click izquierdo" />
+				</a>
 			</figure>
+			<figure class="main-content__logo">
+				<a href="#">
+					<img src="img/video-logo-13.svg" class="main-content__icon" alt="video" />
+				</a>
+			</figure>
+
 			<article class="main-content__article">
 				<h2 class="main-content__title">Especial
 					<span class="main-content__title--highlight">Dota 2</span></h2>
@@ -58,7 +75,7 @@
 				</ul>
 			</aside>
 			</section>
-			
+
 			<section class="section post-content">
 				<h2 class="post-content__title">Lo más
 					<span class="post-content--color">Nuevo

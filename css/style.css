@@ -64,7 +64,7 @@ body{
 }
 
 .page-header__menu .page-header__link span{
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 .page-header__calendar{
@@ -78,11 +78,7 @@ body{
 }
 
 .page-header__calendar .page-header__link span{
-	font-size: 1.2em;
-}
-
-.page-header__logo{
-
+	font-size: 1.4em;
 }
 
 .page-header__logo .page-header__img{
@@ -92,7 +88,16 @@ body{
 }
 
 .page-header__logo .page-header__img img{
-	width: 8em;
+	width: 9.75em;
+}
+
+.main-content__position{
+	margin: 0;
+	padding: 0;
+}
+
+.main-content__position .main-content__list{
+	list-style: none;
 }
 /*contenido principal*/
 .main-content__img{
@@ -272,26 +277,74 @@ body{
 	color: white;
 }
 
-@media only screen and (min-width: 40.625em){
+.contacto-breakpoint{
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.contacto-breakpoint p{
+	margin: 0;
+	padding: 0.5em;
+}
+
+@media only screen and (min-width: 40em){
 	.main-content__position .main-content__list{
 		display: inline-block;
 		width: 45%;
 	}
+	.social-header{
+		display: none;
+	}
+	.contacto-breakpoint {
+		display: none;
+	}
 }
 
-@media only screen and (min-width: 47.5em){
+@media only screen and (min-width: 47em){
 	.contenedor{
-		max-width: 70em;
+		max-width: 90em;
 		margin: 0 auto;
 	}
 
 	.post-content .post-content__list ul{
 		font-size: 0;
 	}
+
 	.post-content .post-content__list > li{
 		display: inline-block;
-		width: 33%;
+		width: 30%;
 		font-size: 1rem;
 		background-color: #ECECEC;
 	}
-}
+	.social-header{
+		text-align: right;
+	}
+
+	.social-header__list{
+		color: white;
+		padding: 0;
+		margin: 0;
+	}
+
+	.social-header__list .social-header__item{
+		display: inline-block;
+		list-style: none;
+		padding: 0.3em;
+		font-size: 0.5em;
+	}
+
+	.social-header__item .social-header__link{
+		text-decoration: none;
+		font-size: 2em;
+		color: white;
+	}
+	@media only screen and (min-width: 56em){
+		.social-link__list{
+			display: none;
+		}
+
+		.contacto-breakpoint{
+			display: block;
+		}
+	}

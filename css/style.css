@@ -102,7 +102,7 @@ body{
 .main-content__img .main-content__video{
 	width: 100%;
 }
-
+/*
 .main-content .main-content__logo{
 	margin: 0;
 }
@@ -111,7 +111,7 @@ body{
 	width: 15%;
 	height: 15%;
 	text-align: center;
-}
+}*/
 
 .main-content__article{
 	margin: 0;
@@ -170,13 +170,21 @@ body{
 	line-height: 1.5em;
 }
 
+.section-divisor{
+	margin: 1.5em 0 0 0;
+}
+
+.section-divisor img{
+	width: 100%;
+}
+
 .section{
 	margin: 0;
-	padding: 1em 2.5em;
+	padding: 1em 2.5em 2.5em 2.5em;
 }
 
 .post-content .post-content__title{
-	margin: 0.5em 0 0.3em 0;
+	margin: 0.3em 0 0.3em 0;
 	font-size: 2.3em;
 	font-weight: 200;
 	text-align: center;
@@ -192,6 +200,8 @@ body{
 
 .post-content__list .post-content__item{
 	list-style: none;
+	padding: 1em;
+	border-radius: 0.3em;
 }
 
 .post-content__article .post-content__img{
@@ -202,45 +212,44 @@ body{
 	width: 100%;
 }
 
-.post-content__article .post-content__main-title{
+.post-content__article .post-content__article-title{
 	font-size: 1.2em;
 	font-weight: 200;
 	margin: 0 auto;
 }
 
-.post-content__item .post-content__article .post-content__icon{
-	text-align: center;
-	margin: 0.5em auto;
-}
-.post-content__article .post-content__main-title .post-content__content{
+.post-content__article .post-content__content{
 	margin: 0;
 }
 
-.post-content__item .post-content__article .post-content__star{
-	text-decoration: none;
+.post-content__article .post-content__icon{
+	text-align: center;
+	margin-top: 0.3em;
 }
 
-.post-content__item .post-content__article .post-content__star .icon-star-full{
-	color: #0078B8;
-	font-size: 1em;
+.post-content__article .post-content__icon .post-content__star img{
+	width: 6em;
 }
 
-.page__footer{
+.page-footer{
 	background-color: #232323;
 }
 
-.page__footer .click-logo a{
+.page-footer .page-footer__click-logo{
+	margin: 0;
+}
+
+.page-footer .page-footer__click-logo a{
 	text-align: center;
 	display: block;
 }
 
-.page__footer .click-logo img{
-	width: 60px;
-	height: 60px;
+.page-footer__click-logo a img{
+	width: 3.75em;
 }
 
-.page__footer .click-logo .click-logo__position{
-	margin-top: -30px;
+.page-footer .page-footer__click-logo .click-logo__position{
+	margin-top: -27px;
 }
 
 .social-link__list{
@@ -253,7 +262,7 @@ body{
 .social-link__list .social-link__item{
 	display: inline-block;
 	list-style: none;
-	padding: 0 0.5em;
+	padding: 0 0.7em;
 	font-size: 1.5em;
 }
 
@@ -261,4 +270,28 @@ body{
 	text-decoration: none;
 	font-size: 1.5em;
 	color: white;
+}
+
+@media only screen and (min-width: 40.625em){
+	.main-content__position .main-content__list{
+		display: inline-block;
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 47.5em){
+	.contenedor{
+		max-width: 70em;
+		margin: 0 auto;
+	}
+
+	.post-content .post-content__list ul{
+		font-size: 0;
+	}
+	.post-content .post-content__list > li{
+		display: inline-block;
+		width: 33%;
+		font-size: 1rem;
+		background-color: #ECECEC;
+	}
 }

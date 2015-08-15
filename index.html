@@ -10,30 +10,41 @@
 	</head>
 	<body>
 		<header class="page-header">
-			<nav>
-				<div class="page-header__menu">
-					<a href="#" class="page-header__link">
-						<span class="icon-menu"></span>
-					</a>
-				</div>
-				<div class="page-header__calendar">
-					<a href="#" class="page-header__link">
-						<span class="icon-calendar"></span>
-					</a>
-				</div>
-				<div class="page-header__logo">
-					<figure class="page-header__img">
-						<img src="img/click-izquierdo-11.svg" alt="tecnologia" />
-					</figure>
-				</div>
-			</nav>
-			<aside class="social-header">
-				<ul class="social-header__list">
-					<li class="social-header__item"><a href="/" class="social-header__link"><span class="icon-facebook"></span></a></li>
-					<li class="social-header__item"><a href="/" class="social-header__link"><span class="icon-twitter"></span></a></li>
-					<li class="social-header__item"><a href="/" class="social-header__link"><span class="icon-g-plus"></span></a></li>
-				</ul>
-			</aside>
+			<div class="contenedor">
+			<!--<ul class="page-header__breakpoint">-->
+				<!--<li class="page-header__list">-->
+					<nav>
+						<div class="page-header__menu">
+							<a href="#" class="page-header__link">
+								<span class="icon-menu"></span>
+							</a>
+						</div>
+
+						<div class="page-header__logo">
+							<figure class="page-header__img">
+								<img src="img/click-izquierdo-11.svg" alt="tecnologia" />
+							</figure>
+						</div>
+
+				<!--</li>-->
+						<div class="page-header__calendar">
+							<a href="#" class="page-header__link">
+								<span class="icon-calendar"></span>
+							</a>
+						</div>
+					</nav>
+			<!--	<li class="page-header__list">
+					<aside class="social-header">
+						<ul class="social-header__list">
+							<li class="social-header__item"><a href="/" class="social-header__link"><span class="icon-facebook"></span></a></li>
+							<li class="social-header__item"><a href="/" class="social-header__link"><span class="icon-twitter"></span></a></li>
+							<li class="social-header__item"><a href="/" class="social-header__link"><span class="icon-g-plus"></span></a></li>
+
+						</ul>
+					</aside>-->
+		<!--		</li>
+		</ul>-->
+		</div>
 		</header>
 		<div class="contenedor">
 			<section class="main-content">
@@ -49,6 +60,19 @@
 								<img src="img/video-logo-13.svg" class="main-content__icon" alt="video" />
 							</a>
 						</figure>-->
+
+					<div>
+						<ul class="main-content__favorito">
+							<li class="main-content__favorito-like">
+								<p>Te gusto el video?</p>
+							</li>
+							<li class="main-content__favorito-like">
+								<figure class="post-content__icon">
+									<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
+								</figure>
+							</li>
+						</ul>
+					</div>
 					</li>
 					<li class="main-content__list">
 						<article class="main-content__article">
@@ -98,98 +122,110 @@
 					</h2>
 					<ul class="post-content__list">
 						<li class="post-content__item">
-							<article class="post-content__article">
-								<figure class="post-content__img">
-									<img src="img/resident.png" alt="resident evil" />
-								</figure>
-								<h3 class="post-content__article-title">Especial Resident Evil</h3>
-								<p class="post-content__content">
-									Praesent commodo cursus magna, vel scelerisque nisl
-									consectetur et. Morbi leo ri..bulum at eros. Cras justo
-									odio, dapibus ac facilisis in, egestas ege... quam.Especial
-									Resident Evil ...
-								</p>
-								<figure class="post-content__icon">
-									<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
-								</figure>
-							</article>
+							<a class="post-content__link">
+								<article class="post-content__article">
+									<figure class="post-content__img">
+										<img src="img/resident.png" alt="resident evil" />
+									</figure>
+									<h3 class="post-content__article-title">Especial Resident Evil</h3>
+									<p class="post-content__content">
+										Praesent commodo cursus magna, vel scelerisque nisl
+										consectetur et. Morbi leo ri..bulum at eros. Cras justo
+										odio, dapibus ac facilisis in, egestas ege... quam.Especial
+										Resident Evil ...
+									</p>
+									<figure class="post-content__icon">
+										<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
+									</figure>
+								</article>
+							</a>
 						</li>
 
 						<li class="post-content__item">
-							<article class="post-content__article">
-								<figure class="post-content__img">
-									<img src="img/dayne.png" alt="resident evil" />
-								</figure>
-								<h3 class="post-content__article-title">Especial Resident Evil</h3>
-								<p class="post-content__content">
-									Praesent commodo cursus magna, vel scelerisque nisl
-									consectetur et. Morbi leo ri..bulum at eros. Cras justo
-									odio, dapibus ac facilisis in, egestas ege... quam.Especial
-									Resident Evil ...
-								</p>
-								<figure class="post-content__icon">
-									<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
-								</figure>
-							</article>
+							<a class="post-content__link">
+								<article class="post-content__article">
+									<figure class="post-content__img">
+										<img src="img/dayne.png" alt="resident evil" />
+									</figure>
+									<h3 class="post-content__article-title">Especial Resident Evil</h3>
+									<p class="post-content__content">
+										Praesent commodo cursus magna, vel scelerisque nisl
+										consectetur et. Morbi leo ri..bulum at eros. Cras justo
+										odio, dapibus ac facilisis in, egestas ege... quam.Especial
+										Resident Evil ...
+									</p>
+									<figure class="post-content__icon">
+										<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
+									</figure>
+								</article>
+							</a>
 						</li>
 					</ul>
-
+				</section>
+				<hr class="separator"/>
+				<section class="section post-content">
 					<h2 class="post-content__title">Los más
 						<span class="post-content--color">Populares
 						</span>
 					</h2>
 					<ul class="post-content__list">
 						<li class="post-content__item">
-							<article class="post-content__article">
-								<figure class="post-content__img">
-									<img src="img/dayne.png" alt="resident evil" />
-								</figure>
-								<h3 class="post-content__article-title">Especial Resident Evil</h3>
-								<p class="post-content__content">
-									Praesent commodo cursus magna, vel scelerisque nisl
-									consectetur et. Morbi leo ri..bulum at eros. Cras justo
-									odio, dapibus ac facilisis in, egestas ege... quam.Especial
-									Resident Evil ...
-								</p>
-								<figure class="post-content__icon">
-									<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
-								</figure>
-							</article>
+							<a class="post-content__link">
+								<article class="post-content__article">
+									<figure class="post-content__img">
+										<img src="img/dayne.png" alt="resident evil" />
+									</figure>
+									<h3 class="post-content__article-title">Especial Resident Evil</h3>
+									<p class="post-content__content">
+										Praesent commodo cursus magna, vel scelerisque nisl
+										consectetur et. Morbi leo ri..bulum at eros. Cras justo
+										odio, dapibus ac facilisis in, egestas ege... quam.Especial
+										Resident Evil ...
+									</p>
+									<figure class="post-content__icon">
+										<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
+									</figure>
+								</article>
+							</a>
 						</li>
 						<li class="post-content__item">
-							<article class="post-content__article">
-								<figure class="post-content__img">
-									<img src="img/popular-resident.png" alt="resident evil" />
-								</figure>
-								<h3 class="post-content__article-title">Especial Resident Evil</h3>
-								<p class="post-content__content">
-									Praesent commodo cursus magna, vel scelerisque nisl
-									consectetur et. Morbi leo ri..bulum at eros. Cras justo
-									odio, dapibus ac facilisis in, egestas ege... quam.Especial
-									Resident Evil ...
-								</p>
-								<figure class="post-content__icon">
-									<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
-								</figure>
-							</article>
+							<a class="post-content__link">
+								<article class="post-content__article">
+									<figure class="post-content__img">
+										<img src="img/popular-resident.png" alt="resident evil" />
+									</figure>
+									<h3 class="post-content__article-title">Especial Resident Evil</h3>
+									<p class="post-content__content">
+										Praesent commodo cursus magna, vel scelerisque nisl
+										consectetur et. Morbi leo ri..bulum at eros. Cras justo
+										odio, dapibus ac facilisis in, egestas ege... quam.Especial
+										Resident Evil ...
+									</p>
+									<figure class="post-content__icon">
+										<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
+									</figure>
+								</article>
+							</a>
 						</li>
 
 						<li class="post-content__item">
-							<article class="post-content__article">
-								<figure class="post-content__img">
-									<img src="img/resident.png" alt="resident evil" />
-								</figure>
-								<h3 class="post-content__article-title">Especial Resident Evil</h3>
-								<p class="post-content__content">
-									Praesent commodo cursus magna, vel scelerisque nisl
-									consectetur et. Morbi leo ri..bulum at eros. Cras justo
-									odio, dapibus ac facilisis in, egestas ege... quam.Especial
-									Resident Evil ...
-								</p>
-								<figure class="post-content__icon">
-									<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
-								</figure>
-							</article>
+							<a class="post-content__link">
+								<article class="post-content__article">
+									<figure class="post-content__img">
+										<img src="img/resident.png" alt="resident evil" />
+									</figure>
+									<h3 class="post-content__article-title">Especial Resident Evil</h3>
+									<p class="post-content__content">
+										Praesent commodo cursus magna, vel scelerisque nisl
+										consectetur et. Morbi leo ri..bulum at eros. Cras justo
+										odio, dapibus ac facilisis in, egestas ege... quam.Especial
+										Resident Evil ...
+									</p>
+									<figure class="post-content__icon">
+										<a href="#" class="post-content__star"><img src="img/stars-11.svg" alt="favorito" /></a>
+									</figure>
+								</article>
+							</a>
 						</li>
 					</ul>
 				</section>

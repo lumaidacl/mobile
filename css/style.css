@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?uhw9zh');
-	src:url('../fonts/icomoon.eot?#iefixuhw9zh') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?uhw9zh') format('truetype'),
-		url('../fonts/icomoon.woff?uhw9zh') format('woff'),
-		url('../fonts/icomoon.svg?uhw9zh#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-hp149h');
+	src:url('../fonts/icomoon.eot?#iefix-hp149h') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?-hp149h') format('truetype'),
+		url('../fonts/icomoon.woff?-hp149h') format('woff'),
+		url('../fonts/icomoon.svg?-hp149h#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,27 +23,31 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calendar:before {
+	content: "\e600";
+}
+.icon-search:before {
+	content: "\e601";
+}
 .icon-menu:before {
 	content: "\e602";
 }
 .icon-star-empty:before {
-	content: "\e600";
-}
-.icon-star-full:before {
-	content: "\e601";
-}
-.icon-g-plus:before {
 	content: "\e603";
 }
-.icon-facebook:before {
+.icon-star-full:before {
 	content: "\e604";
 }
-.icon-twitter:before {
+.icon-google-plus:before {
 	content: "\e605";
 }
-.icon-calendar:before {
+.icon-facebook:before {
 	content: "\e606";
 }
+.icon-twitter:before {
+	content: "\e607";
+}
+
 body{
 	font-family: verdana, sans-serif;
 	font-size: 16px;
@@ -108,16 +112,8 @@ body{
 .main-content__img .main-content__video{
 	width: 100%;
 }
-/*
-.main-content .main-content__logo{
-	margin: 0;
-}
 
-.main-content__logo .main-content__icon{
-	width: 15%;
-	height: 15%;
-	text-align: center;
-}*/
+}
 .main-content__favorito{
 	font-size: 0;
 	margin-top: -30px;
@@ -142,7 +138,7 @@ body{
 .main-content__article .main-content__title{
 	 font-size: 1.5em;
 	 font-weight: 200;
-	 margin: 0;
+	 margin: 0.5em 0;
  }
 
 .main-content__article .main-content__title .main-content__title--highlight{
@@ -199,11 +195,12 @@ body{
 }
 
 .section{
-	margin: 0;
+	width: 90%
+	margin: 0 auto;
 }
 
 .post-content .post-content__title{
-	margin: 0.3em 0 0.3em 0;
+	margin: 0;
 	font-size: 2.3em;
 	font-weight: 200;
 	text-align: center;
@@ -219,7 +216,7 @@ body{
 
 .post-content__list .post-content__item{
 	list-style: none;
-	padding: 1em;
+	padding: 0.5em 1.5em;
 	border-radius: 0.3em;
 }
 
@@ -303,33 +300,44 @@ body{
 }
 
 @media only screen and (min-width: 20em){
+	.main-content__opinion{
+		display: none;
+	}
+
+	.social-header{
+		display: none;
+	}
+
 	.contacto-breakpoint{
 		display: none;
 	}
-
-	/*
-	.social-header{
-		display: none;
-	}*/
 }
-@media only screen and (min-width: 40em){
+@media only screen and (min-width: 48em){
 	.contenedor{
-		max-width: 60em;
+		max-width: 90em;
 		margin: 0 auto;
 	}
+
 	.main-content__img .main-content__video {
-		/*width: 30em;
-		height: 17em;*/
 		margin: 1.5em;
 	}
+	.figure{
+		display: none;
+	}
+	.main-content__opinion{
+		display: block;
+	}
 
+	.main-content__favorito{
+		margin: -20px 0;
+	}
 	.main-content__article {
-	    margin: 1em;
+	    margin: 0 1em;
 	}
 
 	.main-content__position .main-content__list{
-		display: inline-block;
-		width: 45%;
+		display: block;
+		width: 90%;
 	}
 
 	.post-content .post-content__title {
@@ -337,7 +345,18 @@ body{
 		padding-left: 1em;
 	}
 
-	.post-content__list a:hover{
+	.post-content__list{
+		margin-bottom: 2.5em;
+		padding: 0 2em;
+	}
+
+	.post-content .post-content__list > li{
+		display: inline-block;
+		width: 33%;
+		/*background-color: #ECECEC;*/
+	}
+
+	.post-content .post-content__list > li:hover{
 		background-color: #ECECEC;
 	}
 
@@ -349,116 +368,82 @@ body{
 	}
 }
 
-@media only screen and (min-width: 47em){
+@media only screen and (min-width: 60em){
 	.contenedor{
 		max-width: 90em;
 		margin: 0 auto;
 	}
-/*
-	.page-header__breakpoint{
-		font-size: 0;
+
+	.social-header{
+		text-align: right;
+		display: block;
 	}
 
-	.page-header__breakpoint .page-header__list{
+	.social-header__list{
+		margin-top: -50px;
+		margin-right: 20px;
+	}
+
+	.social-header__list .social-header__item{
 		display: inline-block;
-		width: 20%;
-	}
-*/
-	.main-content__list .main-content__article > p{
-		width: 60%;
+		padding: 0.3em;
+		font-size: 1.5em;
 	}
 
-	.main-content__list .social-menu{
-		margin-left: 5em;
+	.social-header__list .social-header__item a{
+		color: white;
+		text-decoration: none;
 	}
 
-	.post-content .post-content__title {
-		text-align: left;
-		padding-left: 1em;
+	.page-header__calendar{
+		display: none;
 	}
 
-	.post-content .post-content__list ul{
-		font-size: 0;
+	.main-content__position .main-content__list{
+		display: block;
+		width: 40%;
+	}
+	.main-content .main-content__position .main-content__list{
+		display: inline-block;
+		width: 40%;
+	}
+
+	.main-content__favorito {
+    	margin: -30px 0;
+	}
+
+	.main-content__article {
+    	margin: 1.5em;
+	}
+
+	.separator{
+		display: none;
+	}
+
+	.section{
+		width: 90%;
+		margin: 3em auto;
+	}
+
+	.post-content__list {
+    	padding: 0 5em;
 	}
 
 	.post-content .post-content__list > li{
 		display: inline-block;
 		width: 25%;
-		font-size: 1rem;
 	}
-
-	.post-content__item .post-content__link{
-		text-decoration: none;
+	.separator{
 		display: block;
+		width: 90%;
+		margin: 0 auto;
 	}
-
-	.post-content__list a:hover{
-		background-color: #ECECEC;
-		padding: 1em;
+	.social-link__list{
+		display: none;
 	}
 
 	.contacto-breakpoint{
 		display: block;
 	}
-	.social-link__list{
-		display: none;
-	}
+
 }
-
-	@media only screen and (min-width: 56em){
-		/*.social-header{
-			text-align: right;
-			display: block;
-		}
-
-		.social-header__list{
-			color: white;
-			padding: 0;
-			margin: 0;
-			float: right;
-			margin-top: -40px;
-    		margin-right: 20px;
-		}*/
-/*
-		.page-header__calendar{
-			display: none;
-		}
-
-		.social-header__list .social-header__item{
-			display: inline-block;
-			list-style: none;
-			padding: 0.3em;
-			font-size: 0.5em;
-		}
-
-		.social-header__item .social-header__link{
-			text-decoration: none;
-			font-size: 2.5em;
-			color: white;
-		}*/
-		.main-content__list .main-content__article > p{
-			width: 60%;
-		}
-
-		.main-content__list .social-menu{
-			margin-left: 5em;
-		}
-
-		.post-content__item .post-content__link{
-			text-decoration: none;
-			display: block;
-		}
-
-		.post-content__list a:hover{
-			background-color: #ECECEC;
-			padding: 1em;
-		}
-
-		.social-link__list{
-			display: none;
-		}
-
-		.contacto-breakpoint{
-			display: block;
-		}
-	}

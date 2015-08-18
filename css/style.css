@@ -95,10 +95,14 @@ body{
 .page-header__logo .page-header__img img{
 	width: 10em;
 }
+/*contenedor izquierdo*/
+.contendor-principal{
+	width: 75em;
+	margin: 0 auto;
+	float: left;
+}
 
 .main-content__position{
-	margin: 0;
-	padding: 0;
 }
 
 .main-content__position .main-content__list{
@@ -153,27 +157,27 @@ body{
 
 .social-menu{
 	width: 240px;
+	height: 36px;
 	background-color: #0B81C5;
 	border-radius: 0.3em;
 	margin: 0 auto;
 }
 
 .social-list{
-	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
-.social-menu .social-list__item .social-menu__title{
+.social-menu__title{
 	color: #FFFFFF;
-	margin: 0;
-
+	margin-top: -5px;
 }
 
 .social-list .social-list__item{
 	display: inline-block;
 	list-style: none;
 	padding: 0 0.2em;
+	line-height: 0.2em;
 }
 
 .social-menu .social-list .social-list__item .social-list__link{
@@ -216,7 +220,7 @@ body{
 
 .post-content__list .post-content__item{
 	list-style: none;
-	padding: 0.5em 1.5em;
+	padding: 1.5em;
 	border-radius: 0.3em;
 }
 
@@ -245,6 +249,11 @@ body{
 
 .post-content__article .post-content__icon .post-content__star img{
 	width: 6em;
+}
+
+.contenedor-secundario{
+	width: 13em;
+	float: right;
 }
 
 .page-footer{
